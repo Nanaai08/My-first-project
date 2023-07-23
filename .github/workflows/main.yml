@@ -23,7 +23,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: timtech4u/flaskapp:latest
+        tags: nanaai08/flaskapp:latest
 
     - name: Login to Google Cloud
       uses: 'google-github-actions/auth@v1'
