@@ -1,0 +1,23 @@
+name: Delete Subdirectories
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  delete-subdirectories:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Delete subdirectories
+      run: |
+        # Navigate to the parent directory
+        cd Delete 
+
+        # Remove subdirectories (adjust as needed)
+        rm -rf subdirectory1 subdirectory2
+
+      # Make sure to use a path that reflects your repository's structure
